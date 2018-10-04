@@ -50,18 +50,21 @@ def single_byte_xor(str1):
 def xor(s1,s2):
 	return ''.join(chr(ord(c) ^ s2) for c in s1)
 
-str1=raw_input("hex encoded str\n")
-"""with open("chall4-file.txt") as f:
-	for line in f:
+if __name__ == "__main__":
+	
+	# str1=raw_input(" Enter hex encoded str\n")
+	
+	"""with open("chall4-file.txt") as f:
+		for line in f:
 		line=line.decode('hex')
 		print single_byte_xor(line),"\n"
-"""
+	"""
 
-# str1=str1.decode('hex')
-# print single_byte_xor(str1),"\n"
+	# str1=str1.decode('hex')
+	# print single_byte_xor(str1),"\n"
 
-str1 = "TWWNPZOAASWNUHZBNWWGSNBVCSLYPMM"
-print single_byte_xor(str1)
+	str1 = "TWWNPZOAASWNUHZBNWWGSNBVCSLYPMM"
+	print single_byte_xor(str1)
 
 
 
